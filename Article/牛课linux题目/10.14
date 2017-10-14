@@ -1,0 +1,112 @@
+>你要在Windows 2000 Server计算机上执行常规升级。你用域的非管理员身份登录服务器，你怎样才能在最短的时间内更新服务器上的所有系统文件和补丁？
+
+以管理员身份登录并运行Windows更新
+
+>下面哪个命令可以统计一个文件中"牛客"出现的行数？
+
+grep "牛客" 文件名 | wc -l
+
+>每5分钟运行一次crond任务exam，下面哪项正确？
+
+    */5 * * * * exam
+
+>使用shell时，默认的环境变量放在哪里？
+
+~/.bash_profile
+
+>init启动进程需要读取()配置文件
+
+/etc/inittab
+
+>如果系统的umask设置为244，创建一个新文件后，它的权限：（）
+
+-r---w--w-
+
+>网络服务的daemon是:
+
+inetd
+
+>如果参数列表个数为1则执行$<1 , 如果参数列表个数为2则执行$<2<$ ，其他情况则……，补充下面的命令 <br>
+
+>Case (  ) in</br>
+1></br>
+   $<1</br>
+2></br>
+   $<2<$1</br>
+Default > </br>
+   echo ……</br>
+
+$#
+
+>运行在多核处理器上的Linux环境中,若临界区非常短,且不允许线程上下文切换的情况下,使用下列哪种机制满足上述需求并且性能最好?
+
+SpinLock
+
+>在Linux主机上完全安装了RHEL5，这时系统会默认安装DHCP服务器软件包，下面关于DHCP服务器的配置文件描述正确的是（  ）
+
+DHCP服务器的配置文件为/etc/dhcpd.conf</br>
+DHCP服务器的配置文件默认是不存在的，需要手工创建
+
+>Linux 系统中DHCP 服务器的服务程序是dhcpd，配置文件是dhcpd.conf，如果在该配置文件中包括如下配置内容：
+Subnet 192.168.2.0 netmask 255.255.255.0 {
+range 192.168.2.100 192.168.2.200 ;
+}
+关于以上配置内容，说法正确的是（ ）多选
+
+对子网“192.168.2.0/24”中的主机进行动态地址分配</br>
+在子网中用于动态分配的IP 地址数量为101 个
+
+>Linux系统中，已经将DHCP服务器架设好，客户端的网络接口eth0，可以通过（ ）命令获得服务器分配的IP地址。多选
+
+dhclient</br>
+ifdown eth0；ifup eth0</br>
+service network stop；service network start</br>
+
+>在Linux上，对于多进程，子进程继承了父进程的下列哪些？
+
+共享内存</br>
+信号掩码</br>
+已打开的文件描述符(注意进程地址空间不继承)
+
+>下面有关bash配置文件，说法正确的是？
+
+.bash_logout：退出shell时，要执行的命令</br>
+.bash_profile：每个用户都可使用该文件输入专用于自己使用的shell信息，当用户登录时，该文件仅仅执行一次!默认情况下</br>
+/etc/profile：此文件为系统的每个用户设置环境信息，当用户第一次登录时，该文件被执行</br>
+* (/etc/bash.bashrc 该文件包含专用于个人的bash shell的bash信息，当登录时以及每次打开新的shell时，该文件被读取)
+这句话错误
+
+>Redhat 9所支持的安装方式有?
+
+通过HTTP进行网络安装</br>
+通过NFS进行网络安装</br>
+从本地硬盘驱动器进行安装
+
+>将光盘/dev/hdc卸载的命令是?
+
+umount /mnt/cdrom /dev/hdc</br>
+umount /dev/hdc
+
+>以下属于网络操作系统的是？
+
+Unix / Linux/WINDOWS NT/  NETWARE 4.11/ LAN MANGER 4.0
+
+>awk'BEGIN { Arr[2,79]=78 __________ }'
+
+
+
+print Arr["2\03479"]
+
+print Arr[2,79]
+
+idx=2 SUBSEP 79;print Arr[idx]
+
+print Arr[ 2, 79]
+
+>bash中，需要将脚本demo.sh的标准输出和标准错误输出重定向至文件demo.log，以下哪些用法是正确的（)
+
+bash  demo.sh &>demo.log
+
+bash  demo.sh>&demo.log
+
+bash  demo.sh >demo.log 2>&1
